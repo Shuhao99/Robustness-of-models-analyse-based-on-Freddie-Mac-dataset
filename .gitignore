@@ -6,4 +6,4 @@ log_with_norm_models/
 log_without_norm_models/
 with_norm_minmax_datasets/
 without_norm_datasets/
-.csv
+*.csv

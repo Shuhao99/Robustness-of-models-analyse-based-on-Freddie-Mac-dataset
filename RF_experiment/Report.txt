@@ -1,0 +1,116 @@
+'n_estimators': [50,100,200,400,800], 
+'max_depth': [2, 4, 8, 10],               
+'min_samples_split': [2, 4, 8, 10]
+
+Loading data...
+# Tuning hyper-parameters for AUC
+Fitting 5 folds for each of 80 candidates, totalling 400 fits
+[Parallel(n_jobs=6)]: Using backend LokyBackend with 6 concurrent workers.
+[Parallel(n_jobs=6)]: Done  20 tasks      | elapsed:  6.3min
+[Parallel(n_jobs=6)]: Done 116 tasks      | elapsed: 51.9min
+[Parallel(n_jobs=6)]: Done 276 tasks      | elapsed: 209.8min
+[Parallel(n_jobs=6)]: Done 400 out of 400 | elapsed: 401.1min finished
+Best parameters set found on development set:
+
+{'max_depth': 10, 'min_samples_split': 2, 'n_estimators': 800}
+
+Grid scores on development set:
+
+0.776 (+/-0.009) for {'max_depth': 2, 'min_samples_split': 2, 'n_estimators': 50}
+0.779 (+/-0.007) for {'max_depth': 2, 'min_samples_split': 2, 'n_estimators': 100}
+0.779 (+/-0.007) for {'max_depth': 2, 'min_samples_split': 2, 'n_estimators': 200}
+0.780 (+/-0.007) for {'max_depth': 2, 'min_samples_split': 2, 'n_estimators': 400}
+0.780 (+/-0.005) for {'max_depth': 2, 'min_samples_split': 2, 'n_estimators': 800}
+0.772 (+/-0.009) for {'max_depth': 2, 'min_samples_split': 4, 'n_estimators': 50}
+0.777 (+/-0.005) for {'max_depth': 2, 'min_samples_split': 4, 'n_estimators': 100}
+0.779 (+/-0.004) for {'max_depth': 2, 'min_samples_split': 4, 'n_estimators': 200}
+0.779 (+/-0.006) for {'max_depth': 2, 'min_samples_split': 4, 'n_estimators': 400}
+0.780 (+/-0.006) for {'max_depth': 2, 'min_samples_split': 4, 'n_estimators': 800}
+0.776 (+/-0.008) for {'max_depth': 2, 'min_samples_split': 8, 'n_estimators': 50}
+0.778 (+/-0.009) for {'max_depth': 2, 'min_samples_split': 8, 'n_estimators': 100}
+0.779 (+/-0.006) for {'max_depth': 2, 'min_samples_split': 8, 'n_estimators': 200}
+0.780 (+/-0.004) for {'max_depth': 2, 'min_samples_split': 8, 'n_estimators': 400}
+0.779 (+/-0.005) for {'max_depth': 2, 'min_samples_split': 8, 'n_estimators': 800}
+0.776 (+/-0.009) for {'max_depth': 2, 'min_samples_split': 10, 'n_estimators': 50}
+0.780 (+/-0.008) for {'max_depth': 2, 'min_samples_split': 10, 'n_estimators': 100}
+0.779 (+/-0.005) for {'max_depth': 2, 'min_samples_split': 10, 'n_estimators': 200}
+0.780 (+/-0.006) for {'max_depth': 2, 'min_samples_split': 10, 'n_estimators': 400}
+0.780 (+/-0.007) for {'max_depth': 2, 'min_samples_split': 10, 'n_estimators': 800}
+0.785 (+/-0.008) for {'max_depth': 4, 'min_samples_split': 2, 'n_estimators': 50}
+0.788 (+/-0.006) for {'max_depth': 4, 'min_samples_split': 2, 'n_estimators': 100}
+0.787 (+/-0.006) for {'max_depth': 4, 'min_samples_split': 2, 'n_estimators': 200}
+0.788 (+/-0.006) for {'max_depth': 4, 'min_samples_split': 2, 'n_estimators': 400}
+0.788 (+/-0.005) for {'max_depth': 4, 'min_samples_split': 2, 'n_estimators': 800}
+0.786 (+/-0.005) for {'max_depth': 4, 'min_samples_split': 4, 'n_estimators': 50}
+0.787 (+/-0.007) for {'max_depth': 4, 'min_samples_split': 4, 'n_estimators': 100}
+0.788 (+/-0.007) for {'max_depth': 4, 'min_samples_split': 4, 'n_estimators': 200}
+0.788 (+/-0.005) for {'max_depth': 4, 'min_samples_split': 4, 'n_estimators': 400}
+0.788 (+/-0.005) for {'max_depth': 4, 'min_samples_split': 4, 'n_estimators': 800}
+0.787 (+/-0.005) for {'max_depth': 4, 'min_samples_split': 8, 'n_estimators': 50}
+0.788 (+/-0.006) for {'max_depth': 4, 'min_samples_split': 8, 'n_estimators': 100}
+0.788 (+/-0.006) for {'max_depth': 4, 'min_samples_split': 8, 'n_estimators': 200}
+0.788 (+/-0.005) for {'max_depth': 4, 'min_samples_split': 8, 'n_estimators': 400}
+0.788 (+/-0.005) for {'max_depth': 4, 'min_samples_split': 8, 'n_estimators': 800}
+0.787 (+/-0.007) for {'max_depth': 4, 'min_samples_split': 10, 'n_estimators': 50}
+0.787 (+/-0.006) for {'max_depth': 4, 'min_samples_split': 10, 'n_estimators': 100}
+0.788 (+/-0.005) for {'max_depth': 4, 'min_samples_split': 10, 'n_estimators': 200}
+0.788 (+/-0.005) for {'max_depth': 4, 'min_samples_split': 10, 'n_estimators': 400}
+0.788 (+/-0.005) for {'max_depth': 4, 'min_samples_split': 10, 'n_estimators': 800}
+0.799 (+/-0.005) for {'max_depth': 8, 'min_samples_split': 2, 'n_estimators': 50}
+0.800 (+/-0.005) for {'max_depth': 8, 'min_samples_split': 2, 'n_estimators': 100}
+0.800 (+/-0.005) for {'max_depth': 8, 'min_samples_split': 2, 'n_estimators': 200}
+0.800 (+/-0.006) for {'max_depth': 8, 'min_samples_split': 2, 'n_estimators': 400}
+0.800 (+/-0.006) for {'max_depth': 8, 'min_samples_split': 2, 'n_estimators': 800}
+0.799 (+/-0.007) for {'max_depth': 8, 'min_samples_split': 4, 'n_estimators': 50}
+0.800 (+/-0.005) for {'max_depth': 8, 'min_samples_split': 4, 'n_estimators': 100}
+0.800 (+/-0.005) for {'max_depth': 8, 'min_samples_split': 4, 'n_estimators': 200}
+0.800 (+/-0.006) for {'max_depth': 8, 'min_samples_split': 4, 'n_estimators': 400}
+0.800 (+/-0.005) for {'max_depth': 8, 'min_samples_split': 4, 'n_estimators': 800}
+0.799 (+/-0.005) for {'max_depth': 8, 'min_samples_split': 8, 'n_estimators': 50}
+0.800 (+/-0.006) for {'max_depth': 8, 'min_samples_split': 8, 'n_estimators': 100}
+0.800 (+/-0.006) for {'max_depth': 8, 'min_samples_split': 8, 'n_estimators': 200}
+0.800 (+/-0.005) for {'max_depth': 8, 'min_samples_split': 8, 'n_estimators': 400}
+0.800 (+/-0.006) for {'max_depth': 8, 'min_samples_split': 8, 'n_estimators': 800}
+0.800 (+/-0.005) for {'max_depth': 8, 'min_samples_split': 10, 'n_estimators': 50}
+0.800 (+/-0.006) for {'max_depth': 8, 'min_samples_split': 10, 'n_estimators': 100}
+0.800 (+/-0.006) for {'max_depth': 8, 'min_samples_split': 10, 'n_estimators': 200}
+0.800 (+/-0.005) for {'max_depth': 8, 'min_samples_split': 10, 'n_estimators': 400}
+0.800 (+/-0.006) for {'max_depth': 8, 'min_samples_split': 10, 'n_estimators': 800}
+0.803 (+/-0.006) for {'max_depth': 10, 'min_samples_split': 2, 'n_estimators': 50}
+0.803 (+/-0.006) for {'max_depth': 10, 'min_samples_split': 2, 'n_estimators': 100}
+0.804 (+/-0.005) for {'max_depth': 10, 'min_samples_split': 2, 'n_estimators': 200}
+0.804 (+/-0.005) for {'max_depth': 10, 'min_samples_split': 2, 'n_estimators': 400}
+0.804 (+/-0.006) for {'max_depth': 10, 'min_samples_split': 2, 'n_estimators': 800}
+0.803 (+/-0.005) for {'max_depth': 10, 'min_samples_split': 4, 'n_estimators': 50}
+0.803 (+/-0.005) for {'max_depth': 10, 'min_samples_split': 4, 'n_estimators': 100}
+0.804 (+/-0.006) for {'max_depth': 10, 'min_samples_split': 4, 'n_estimators': 200}
+0.804 (+/-0.006) for {'max_depth': 10, 'min_samples_split': 4, 'n_estimators': 400}
+0.804 (+/-0.005) for {'max_depth': 10, 'min_samples_split': 4, 'n_estimators': 800}
+0.803 (+/-0.005) for {'max_depth': 10, 'min_samples_split': 8, 'n_estimators': 50}
+0.803 (+/-0.005) for {'max_depth': 10, 'min_samples_split': 8, 'n_estimators': 100}
+0.804 (+/-0.006) for {'max_depth': 10, 'min_samples_split': 8, 'n_estimators': 200}
+0.804 (+/-0.005) for {'max_depth': 10, 'min_samples_split': 8, 'n_estimators': 400}
+0.804 (+/-0.006) for {'max_depth': 10, 'min_samples_split': 8, 'n_estimators': 800}
+0.803 (+/-0.005) for {'max_depth': 10, 'min_samples_split': 10, 'n_estimators': 50}
+0.803 (+/-0.005) for {'max_depth': 10, 'min_samples_split': 10, 'n_estimators': 100}
+0.804 (+/-0.005) for {'max_depth': 10, 'min_samples_split': 10, 'n_estimators': 200}
+0.804 (+/-0.006) for {'max_depth': 10, 'min_samples_split': 10, 'n_estimators': 400}
+0.804 (+/-0.005) for {'max_depth': 10, 'min_samples_split': 10, 'n_estimators': 800}
+
+Detailed classification report:
+
+The model is trained on the full development set.
+The scores are computed on the full evaluation set.
+
+G:\Anaconda\envs\FYP\lib\site-packages\sklearn\metrics\_classification.py:1221: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+              precision    recall  f1-score   support
+
+           0       0.98      1.00      0.99    330731
+           1       0.00      0.00      0.00      7889
+
+    accuracy                           0.98    338620
+   macro avg       0.49      0.50      0.49    338620
+weighted avg       0.95      0.98      0.97    338620
+
+
