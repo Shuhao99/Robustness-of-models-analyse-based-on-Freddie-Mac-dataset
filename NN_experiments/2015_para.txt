@@ -1,0 +1,142 @@
+# Tuning hyper-parameters for AUC
+Fitting 5 folds for each of 108 candidates, totalling 540 fits
+[Parallel(n_jobs=7)]: Using backend LokyBackend with 7 concurrent workers.
+[Parallel(n_jobs=7)]: Done  36 tasks      | elapsed:  3.9min
+[Parallel(n_jobs=7)]: Done 186 tasks      | elapsed: 23.2min
+[Parallel(n_jobs=7)]: Done 436 tasks      | elapsed: 56.6min
+[Parallel(n_jobs=7)]: Done 540 out of 540 | elapsed: 74.7min finished
+Best parameters set found on development set:
+
+{'activation': 'tanh', 'alpha': 0.001, 'hidden_layer_sizes': (15,), 'learning_rate_init': 0.001}
+
+Grid scores on development set:
+
+0.670 (+/-0.015) for {'activation': 'logistic', 'alpha': 0.1, 'hidden_layer_sizes': (5,), 'learning_rate_init': 0.01}
+0.679 (+/-0.012) for {'activation': 'logistic', 'alpha': 0.1, 'hidden_layer_sizes': (5,), 'learning_rate_init': 0.001}
+0.688 (+/-0.014) for {'activation': 'logistic', 'alpha': 0.1, 'hidden_layer_sizes': (5,), 'learning_rate_init': 0.0001}
+0.672 (+/-0.010) for {'activation': 'logistic', 'alpha': 0.1, 'hidden_layer_sizes': (10,), 'learning_rate_init': 0.01}
+0.680 (+/-0.013) for {'activation': 'logistic', 'alpha': 0.1, 'hidden_layer_sizes': (10,), 'learning_rate_init': 0.001}
+0.688 (+/-0.013) for {'activation': 'logistic', 'alpha': 0.1, 'hidden_layer_sizes': (10,), 'learning_rate_init': 0.0001}
+0.671 (+/-0.017) for {'activation': 'logistic', 'alpha': 0.1, 'hidden_layer_sizes': (15,), 'learning_rate_init': 0.01}
+0.679 (+/-0.013) for {'activation': 'logistic', 'alpha': 0.1, 'hidden_layer_sizes': (15,), 'learning_rate_init': 0.001}
+0.687 (+/-0.015) for {'activation': 'logistic', 'alpha': 0.1, 'hidden_layer_sizes': (15,), 'learning_rate_init': 0.0001}
+0.483 (+/-0.091) for {'activation': 'logistic', 'alpha': 0.1, 'hidden_layer_sizes': (5, 5), 'learning_rate_init': 0.01}
+0.572 (+/-0.088) for {'activation': 'logistic', 'alpha': 0.1, 'hidden_layer_sizes': (5, 5), 'learning_rate_init': 0.001}
+0.660 (+/-0.013) for {'activation': 'logistic', 'alpha': 0.1, 'hidden_layer_sizes': (5, 5), 'learning_rate_init': 0.0001}
+0.803 (+/-0.007) for {'activation': 'logistic', 'alpha': 0.01, 'hidden_layer_sizes': (5,), 'learning_rate_init': 0.01}
+0.805 (+/-0.005) for {'activation': 'logistic', 'alpha': 0.01, 'hidden_layer_sizes': (5,), 'learning_rate_init': 0.001}
+0.735 (+/-0.015) for {'activation': 'logistic', 'alpha': 0.01, 'hidden_layer_sizes': (5,), 'learning_rate_init': 0.0001}
+0.803 (+/-0.008) for {'activation': 'logistic', 'alpha': 0.01, 'hidden_layer_sizes': (10,), 'learning_rate_init': 0.01}
+0.805 (+/-0.003) for {'activation': 'logistic', 'alpha': 0.01, 'hidden_layer_sizes': (10,), 'learning_rate_init': 0.001}
+0.750 (+/-0.016) for {'activation': 'logistic', 'alpha': 0.01, 'hidden_layer_sizes': (10,), 'learning_rate_init': 0.0001}
+0.804 (+/-0.003) for {'activation': 'logistic', 'alpha': 0.01, 'hidden_layer_sizes': (15,), 'learning_rate_init': 0.01}
+0.805 (+/-0.003) for {'activation': 'logistic', 'alpha': 0.01, 'hidden_layer_sizes': (15,), 'learning_rate_init': 0.001}
+0.754 (+/-0.015) for {'activation': 'logistic', 'alpha': 0.01, 'hidden_layer_sizes': (15,), 'learning_rate_init': 0.0001}
+0.802 (+/-0.004) for {'activation': 'logistic', 'alpha': 0.01, 'hidden_layer_sizes': (5, 5), 'learning_rate_init': 0.01}
+0.807 (+/-0.004) for {'activation': 'logistic', 'alpha': 0.01, 'hidden_layer_sizes': (5, 5), 'learning_rate_init': 0.001}
+0.692 (+/-0.014) for {'activation': 'logistic', 'alpha': 0.01, 'hidden_layer_sizes': (5, 5), 'learning_rate_init': 0.0001}
+0.809 (+/-0.003) for {'activation': 'logistic', 'alpha': 0.001, 'hidden_layer_sizes': (5,), 'learning_rate_init': 0.01}
+0.810 (+/-0.004) for {'activation': 'logistic', 'alpha': 0.001, 'hidden_layer_sizes': (5,), 'learning_rate_init': 0.001}
+0.781 (+/-0.013) for {'activation': 'logistic', 'alpha': 0.001, 'hidden_layer_sizes': (5,), 'learning_rate_init': 0.0001}
+0.810 (+/-0.005) for {'activation': 'logistic', 'alpha': 0.001, 'hidden_layer_sizes': (10,), 'learning_rate_init': 0.01}
+0.810 (+/-0.005) for {'activation': 'logistic', 'alpha': 0.001, 'hidden_layer_sizes': (10,), 'learning_rate_init': 0.001}
+0.792 (+/-0.002) for {'activation': 'logistic', 'alpha': 0.001, 'hidden_layer_sizes': (10,), 'learning_rate_init': 0.0001}
+0.809 (+/-0.006) for {'activation': 'logistic', 'alpha': 0.001, 'hidden_layer_sizes': (15,), 'learning_rate_init': 0.01}
+0.810 (+/-0.004) for {'activation': 'logistic', 'alpha': 0.001, 'hidden_layer_sizes': (15,), 'learning_rate_init': 0.001}
+0.795 (+/-0.005) for {'activation': 'logistic', 'alpha': 0.001, 'hidden_layer_sizes': (15,), 'learning_rate_init': 0.0001}
+0.809 (+/-0.005) for {'activation': 'logistic', 'alpha': 0.001, 'hidden_layer_sizes': (5, 5), 'learning_rate_init': 0.01}
+0.810 (+/-0.004) for {'activation': 'logistic', 'alpha': 0.001, 'hidden_layer_sizes': (5, 5), 'learning_rate_init': 0.001}
+0.705 (+/-0.019) for {'activation': 'logistic', 'alpha': 0.001, 'hidden_layer_sizes': (5, 5), 'learning_rate_init': 0.0001}
+0.770 (+/-0.010) for {'activation': 'tanh', 'alpha': 0.1, 'hidden_layer_sizes': (5,), 'learning_rate_init': 0.01}
+0.785 (+/-0.011) for {'activation': 'tanh', 'alpha': 0.1, 'hidden_layer_sizes': (5,), 'learning_rate_init': 0.001}
+0.773 (+/-0.015) for {'activation': 'tanh', 'alpha': 0.1, 'hidden_layer_sizes': (5,), 'learning_rate_init': 0.0001}
+0.769 (+/-0.012) for {'activation': 'tanh', 'alpha': 0.1, 'hidden_layer_sizes': (10,), 'learning_rate_init': 0.01}
+0.787 (+/-0.006) for {'activation': 'tanh', 'alpha': 0.1, 'hidden_layer_sizes': (10,), 'learning_rate_init': 0.001}
+0.783 (+/-0.006) for {'activation': 'tanh', 'alpha': 0.1, 'hidden_layer_sizes': (10,), 'learning_rate_init': 0.0001}
+0.778 (+/-0.007) for {'activation': 'tanh', 'alpha': 0.1, 'hidden_layer_sizes': (15,), 'learning_rate_init': 0.01}
+0.782 (+/-0.006) for {'activation': 'tanh', 'alpha': 0.1, 'hidden_layer_sizes': (15,), 'learning_rate_init': 0.001}
+0.788 (+/-0.008) for {'activation': 'tanh', 'alpha': 0.1, 'hidden_layer_sizes': (15,), 'learning_rate_init': 0.0001}
+0.789 (+/-0.015) for {'activation': 'tanh', 'alpha': 0.1, 'hidden_layer_sizes': (5, 5), 'learning_rate_init': 0.01}
+0.803 (+/-0.006) for {'activation': 'tanh', 'alpha': 0.1, 'hidden_layer_sizes': (5, 5), 'learning_rate_init': 0.001}
+0.802 (+/-0.004) for {'activation': 'tanh', 'alpha': 0.1, 'hidden_layer_sizes': (5, 5), 'learning_rate_init': 0.0001}
+0.806 (+/-0.008) for {'activation': 'tanh', 'alpha': 0.01, 'hidden_layer_sizes': (5,), 'learning_rate_init': 0.01}
+0.810 (+/-0.005) for {'activation': 'tanh', 'alpha': 0.01, 'hidden_layer_sizes': (5,), 'learning_rate_init': 0.001}
+0.806 (+/-0.005) for {'activation': 'tanh', 'alpha': 0.01, 'hidden_layer_sizes': (5,), 'learning_rate_init': 0.0001}
+0.807 (+/-0.004) for {'activation': 'tanh', 'alpha': 0.01, 'hidden_layer_sizes': (10,), 'learning_rate_init': 0.01}
+0.809 (+/-0.005) for {'activation': 'tanh', 'alpha': 0.01, 'hidden_layer_sizes': (10,), 'learning_rate_init': 0.001}
+0.808 (+/-0.003) for {'activation': 'tanh', 'alpha': 0.01, 'hidden_layer_sizes': (10,), 'learning_rate_init': 0.0001}
+0.807 (+/-0.006) for {'activation': 'tanh', 'alpha': 0.01, 'hidden_layer_sizes': (15,), 'learning_rate_init': 0.01}
+0.809 (+/-0.004) for {'activation': 'tanh', 'alpha': 0.01, 'hidden_layer_sizes': (15,), 'learning_rate_init': 0.001}
+0.809 (+/-0.003) for {'activation': 'tanh', 'alpha': 0.01, 'hidden_layer_sizes': (15,), 'learning_rate_init': 0.0001}
+0.806 (+/-0.007) for {'activation': 'tanh', 'alpha': 0.01, 'hidden_layer_sizes': (5, 5), 'learning_rate_init': 0.01}
+0.810 (+/-0.003) for {'activation': 'tanh', 'alpha': 0.01, 'hidden_layer_sizes': (5, 5), 'learning_rate_init': 0.001}
+0.809 (+/-0.004) for {'activation': 'tanh', 'alpha': 0.01, 'hidden_layer_sizes': (5, 5), 'learning_rate_init': 0.0001}
+0.808 (+/-0.005) for {'activation': 'tanh', 'alpha': 0.001, 'hidden_layer_sizes': (5,), 'learning_rate_init': 0.01}
+0.812 (+/-0.002) for {'activation': 'tanh', 'alpha': 0.001, 'hidden_layer_sizes': (5,), 'learning_rate_init': 0.001}
+0.806 (+/-0.002) for {'activation': 'tanh', 'alpha': 0.001, 'hidden_layer_sizes': (5,), 'learning_rate_init': 0.0001}
+0.809 (+/-0.004) for {'activation': 'tanh', 'alpha': 0.001, 'hidden_layer_sizes': (10,), 'learning_rate_init': 0.01}
+0.812 (+/-0.004) for {'activation': 'tanh', 'alpha': 0.001, 'hidden_layer_sizes': (10,), 'learning_rate_init': 0.001}
+0.808 (+/-0.003) for {'activation': 'tanh', 'alpha': 0.001, 'hidden_layer_sizes': (10,), 'learning_rate_init': 0.0001}
+0.808 (+/-0.005) for {'activation': 'tanh', 'alpha': 0.001, 'hidden_layer_sizes': (15,), 'learning_rate_init': 0.01}
+0.812 (+/-0.004) for {'activation': 'tanh', 'alpha': 0.001, 'hidden_layer_sizes': (15,), 'learning_rate_init': 0.001}
+nan (+/-nan) for {'activation': 'tanh', 'alpha': 0.001, 'hidden_layer_sizes': (15,), 'learning_rate_init': 0.0001}
+0.809 (+/-0.006) for {'activation': 'tanh', 'alpha': 0.001, 'hidden_layer_sizes': (5, 5), 'learning_rate_init': 0.01}
+0.812 (+/-0.004) for {'activation': 'tanh', 'alpha': 0.001, 'hidden_layer_sizes': (5, 5), 'learning_rate_init': 0.001}
+0.807 (+/-0.003) for {'activation': 'tanh', 'alpha': 0.001, 'hidden_layer_sizes': (5, 5), 'learning_rate_init': 0.0001}
+0.778 (+/-0.017) for {'activation': 'relu', 'alpha': 0.1, 'hidden_layer_sizes': (5,), 'learning_rate_init': 0.01}
+0.792 (+/-0.009) for {'activation': 'relu', 'alpha': 0.1, 'hidden_layer_sizes': (5,), 'learning_rate_init': 0.001}
+0.767 (+/-0.019) for {'activation': 'relu', 'alpha': 0.1, 'hidden_layer_sizes': (5,), 'learning_rate_init': 0.0001}
+0.769 (+/-0.009) for {'activation': 'relu', 'alpha': 0.1, 'hidden_layer_sizes': (10,), 'learning_rate_init': 0.01}
+0.790 (+/-0.010) for {'activation': 'relu', 'alpha': 0.1, 'hidden_layer_sizes': (10,), 'learning_rate_init': 0.001}
+0.781 (+/-0.011) for {'activation': 'relu', 'alpha': 0.1, 'hidden_layer_sizes': (10,), 'learning_rate_init': 0.0001}
+0.764 (+/-0.006) for {'activation': 'relu', 'alpha': 0.1, 'hidden_layer_sizes': (15,), 'learning_rate_init': 0.01}
+0.789 (+/-0.004) for {'activation': 'relu', 'alpha': 0.1, 'hidden_layer_sizes': (15,), 'learning_rate_init': 0.001}
+0.787 (+/-0.006) for {'activation': 'relu', 'alpha': 0.1, 'hidden_layer_sizes': (15,), 'learning_rate_init': 0.0001}
+nan (+/-nan) for {'activation': 'relu', 'alpha': 0.1, 'hidden_layer_sizes': (5, 5), 'learning_rate_init': 0.01}
+0.803 (+/-0.004) for {'activation': 'relu', 'alpha': 0.1, 'hidden_layer_sizes': (5, 5), 'learning_rate_init': 0.001}
+0.799 (+/-0.006) for {'activation': 'relu', 'alpha': 0.1, 'hidden_layer_sizes': (5, 5), 'learning_rate_init': 0.0001}
+0.804 (+/-0.005) for {'activation': 'relu', 'alpha': 0.01, 'hidden_layer_sizes': (5,), 'learning_rate_init': 0.01}
+0.809 (+/-0.004) for {'activation': 'relu', 'alpha': 0.01, 'hidden_layer_sizes': (5,), 'learning_rate_init': 0.001}
+0.805 (+/-0.004) for {'activation': 'relu', 'alpha': 0.01, 'hidden_layer_sizes': (5,), 'learning_rate_init': 0.0001}
+0.806 (+/-0.005) for {'activation': 'relu', 'alpha': 0.01, 'hidden_layer_sizes': (10,), 'learning_rate_init': 0.01}
+0.810 (+/-0.003) for {'activation': 'relu', 'alpha': 0.01, 'hidden_layer_sizes': (10,), 'learning_rate_init': 0.001}
+0.807 (+/-0.004) for {'activation': 'relu', 'alpha': 0.01, 'hidden_layer_sizes': (10,), 'learning_rate_init': 0.0001}
+0.806 (+/-0.004) for {'activation': 'relu', 'alpha': 0.01, 'hidden_layer_sizes': (15,), 'learning_rate_init': 0.01}
+0.809 (+/-0.006) for {'activation': 'relu', 'alpha': 0.01, 'hidden_layer_sizes': (15,), 'learning_rate_init': 0.001}
+0.808 (+/-0.002) for {'activation': 'relu', 'alpha': 0.01, 'hidden_layer_sizes': (15,), 'learning_rate_init': 0.0001}
+0.806 (+/-0.004) for {'activation': 'relu', 'alpha': 0.01, 'hidden_layer_sizes': (5, 5), 'learning_rate_init': 0.01}
+0.810 (+/-0.004) for {'activation': 'relu', 'alpha': 0.01, 'hidden_layer_sizes': (5, 5), 'learning_rate_init': 0.001}
+0.808 (+/-0.002) for {'activation': 'relu', 'alpha': 0.01, 'hidden_layer_sizes': (5, 5), 'learning_rate_init': 0.0001}
+0.807 (+/-0.007) for {'activation': 'relu', 'alpha': 0.001, 'hidden_layer_sizes': (5,), 'learning_rate_init': 0.01}
+0.810 (+/-0.004) for {'activation': 'relu', 'alpha': 0.001, 'hidden_layer_sizes': (5,), 'learning_rate_init': 0.001}
+0.804 (+/-0.006) for {'activation': 'relu', 'alpha': 0.001, 'hidden_layer_sizes': (5,), 'learning_rate_init': 0.0001}
+0.808 (+/-0.003) for {'activation': 'relu', 'alpha': 0.001, 'hidden_layer_sizes': (10,), 'learning_rate_init': 0.01}
+0.811 (+/-0.004) for {'activation': 'relu', 'alpha': 0.001, 'hidden_layer_sizes': (10,), 'learning_rate_init': 0.001}
+0.807 (+/-0.002) for {'activation': 'relu', 'alpha': 0.001, 'hidden_layer_sizes': (10,), 'learning_rate_init': 0.0001}
+0.808 (+/-0.006) for {'activation': 'relu', 'alpha': 0.001, 'hidden_layer_sizes': (15,), 'learning_rate_init': 0.01}
+0.811 (+/-0.005) for {'activation': 'relu', 'alpha': 0.001, 'hidden_layer_sizes': (15,), 'learning_rate_init': 0.001}
+0.808 (+/-0.002) for {'activation': 'relu', 'alpha': 0.001, 'hidden_layer_sizes': (15,), 'learning_rate_init': 0.0001}
+0.808 (+/-0.003) for {'activation': 'relu', 'alpha': 0.001, 'hidden_layer_sizes': (5, 5), 'learning_rate_init': 0.01}
+0.810 (+/-0.005) for {'activation': 'relu', 'alpha': 0.001, 'hidden_layer_sizes': (5, 5), 'learning_rate_init': 0.001}
+0.807 (+/-0.005) for {'activation': 'relu', 'alpha': 0.001, 'hidden_layer_sizes': (5, 5), 'learning_rate_init': 0.0001}
+
+Detailed classification report:
+
+The model is trained on the full development set.
+The scores are computed on the full evaluation set.
+
+G:\Anaconda\envs\FYP\lib\site-packages\sklearn\metrics\_classification.py:1221: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+              precision    recall  f1-score   support
+
+           0       0.99      1.00      1.00    402003
+           1       0.00      0.00      0.00      3794
+
+    accuracy                           0.99    405797
+   macro avg       0.50      0.50      0.50    405797
+weighted avg       0.98      0.99      0.99    405797
+
+
+​
+​
+​
